@@ -17,13 +17,23 @@ cd repo-name
 npm install
 ```
 
-3. Jalankan server
+3. Install nodemon untuk development (jika belum ada)
 
 ```bash
+npm install -g nodemon
+```
+
+4. Jalankan server
+
+```bash
+# Untuk development (dengan auto-restart)
+npm run dev
+
+# Atau jalankan langsung dengan node
 node index.js
 ```
 
-4. Server akan berjalan di:
+5. Server akan berjalan di:
 
 ```
 http://localhost:4001
@@ -135,9 +145,20 @@ Jika endpoint tidak ditemukan, response:
 
 - Semua data disimpan di **memori sementara**. Saat server restart, data akan kembali ke kondisi awal.
 - Cocok untuk latihan **REST API** dasar dengan Express.js.
+- Menggunakan **nodemon** untuk development agar server otomatis restart saat ada perubahan code.
 - Endpoint `/data/months/:id` sekarang memiliki validasi tambahan:
   - Memastikan ID adalah angka (`isNaN` check)
   - Memastikan angka antara 1–12
+
+## 🚀 Scripts yang Tersedia
+
+- `npm run dev` - Menjalankan server dengan nodemon (auto-restart)
+- `node index.js` - Menjalankan server langsung dengan node
+
+## 🛠 Dependencies
+
+- **express** ^5.1.0 - Web framework untuk Node.js
+- **nodemon** - Development tool untuk auto-restart server (global)
 
 ## 📌 Lisensi
 
