@@ -7,8 +7,8 @@ Proyek ini adalah aplikasi backend sederhana menggunakan **Express.js** untuk tu
 1. Clone repository ini
 
 ```bash
-git clone https://github.com/username/repo-name.git
-cd repo-name
+git clone https://github.com/DonAdhyatma/simple-backend-to-learn-express.git
+cd simple-backend-to-learn-express
 ```
 
 2. Install dependencies
